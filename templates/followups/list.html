@@ -1,0 +1,28 @@
+<table class="table table-bordered">
+
+<tr>
+
+<th>Date</th>
+<th>Customer</th>
+<th>Deal</th>
+<th>Notes</th>
+
+</tr>
+
+{% for i in followups %}
+
+<tr>
+
+<td>{{ i.followup_date }}</td>
+
+<td>{{ i.customer }}</td>
+
+<td>{{ i.deal }}</td>
+
+<td>{{ i.notes }}</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
